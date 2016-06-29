@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WqK-dQ-i6q">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Painting Controller-->
+        <scene sceneID="rY2-Mx-ZPn">
+            <objects>
+                <viewController storyboardIdentifier="PaintingController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WqK-dQ-i6q" customClass="PaintingController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K1T-Yk-QMm"/>
+                        <viewControllerLayoutGuide type="bottom" id="7vx-4a-NmR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VUn-Xy-XRj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEJ-lG-sC4">
+                                <rect key="frame" x="302" y="289" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="281" y="308" width="39" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXg-xm-pSJ" userLabel="Button - Black">
+                                <rect key="frame" x="178" y="544" width="38" height="30"/>
+                                <state key="normal" backgroundImage="button_black.png"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="75" y="700" width="50" height="50"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pm-02-xXq" userLabel="Button - Green">
+                                <rect key="frame" x="260" y="544" width="42" height="30"/>
+                                <state key="normal" backgroundImage="button_green.png"/>
+                                <state key="selected" backgroundImage="button_green_selected.png"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="169" y="700" width="50" height="50"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VrP-Us-3XW" userLabel="Button - Purple">
+                                <rect key="frame" x="351" y="544" width="46" height="30"/>
+                                <state key="normal" backgroundImage="button_purple.png"/>
+                                <state key="selected" backgroundImage="button_purple_selected.png"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="278" y="700" width="50" height="50"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQf-Bk-yfS" userLabel="Button - Blue">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" backgroundImage="button_blue.png"/>
+                                <state key="selected" backgroundImage="button_blue_selected.png"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="397" y="700" width="50" height="50"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMa-vP-OUw" userLabel="Button - White">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="White" backgroundImage="button_white.png"/>
+                                <state key="selected" backgroundImage="button_white_selected.png"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="512" y="700" width="50" height="50"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="FQf-Bk-yfS"/>
+                                <exclude reference="TMa-vP-OUw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="FQf-Bk-yfS"/>
+                                <include reference="TMa-vP-OUw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="black_button" destination="mXg-xm-pSJ" id="QKy-80-HtN"/>
+                        <outlet property="blue_button" destination="FQf-Bk-yfS" id="XZM-vN-Uyo"/>
+                        <outlet property="green_button" destination="2pm-02-xXq" id="f9R-6y-Xht"/>
+                        <outlet property="purple_button" destination="VrP-Us-3XW" id="cab-ze-fl0"/>
+                        <outlet property="white_button" destination="TMa-vP-OUw" id="9xu-l8-hGA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="80J-Fy-8fA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="323" y="291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button_black.png" width="100" height="100"/>
+        <image name="button_blue.png" width="100" height="100"/>
+        <image name="button_blue_selected.png" width="100" height="100"/>
+        <image name="button_green.png" width="100" height="100"/>
+        <image name="button_green_selected.png" width="100" height="100"/>
+        <image name="button_purple.png" width="100" height="100"/>
+        <image name="button_purple_selected.png" width="100" height="100"/>
+        <image name="button_white.png" width="100" height="100"/>
+        <image name="button_white_selected.png" width="100" height="100"/>
+    </resources>
+</document>
